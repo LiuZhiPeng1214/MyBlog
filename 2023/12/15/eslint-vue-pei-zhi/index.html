@@ -4,12 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Vite + Vue3 + EsLint + Prettier 配置指南：轻松上手, 码大虾的博客">
-    <meta name="description" content="Vite + Vue3 + EsLint + Prettier 配置指南：轻松上手
-使用Vite创建一个Vue项目yarn create vite
+    <meta name="keywords" content="Vite, Vue3, EsLint, Prettier">
+    <meta name="description" content="Vite + Vue3 + EsLint + Prettier 配置指南：轻松上手1. 使用Vite创建一个Vue项目yarn create vite
 
 ? Project name: 输入你的项目名称？（如: esvue）
-? Select ">
+? Selec">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -385,10 +384,6 @@
                                 <span class="chip bg-color">Prettier</span>
                             </a>
                         
-                            <a href="/tags/object-Object/">
-                                <span class="chip bg-color">[object Object]</span>
-                            </a>
-                        
                     </div>
                     
                 </div>
@@ -425,8 +420,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Vite-Vue3-EsLint-Prettier-配置指南：轻松上手"><a href="#Vite-Vue3-EsLint-Prettier-配置指南：轻松上手" class="headerlink" title="Vite + Vue3 + EsLint + Prettier 配置指南：轻松上手"></a>Vite + Vue3 + EsLint + Prettier 配置指南：轻松上手</h1><ol>
-<li>使用Vite创建一个Vue项目<pre class="line-numbers language-none"><code class="language-none">yarn create vite
+                <h1 id="Vite-Vue3-EsLint-Prettier-配置指南：轻松上手"><a href="#Vite-Vue3-EsLint-Prettier-配置指南：轻松上手" class="headerlink" title="Vite + Vue3 + EsLint + Prettier 配置指南：轻松上手"></a>Vite + Vue3 + EsLint + Prettier 配置指南：轻松上手</h1><h3 id="1-使用Vite创建一个Vue项目"><a href="#1-使用Vite创建一个Vue项目" class="headerlink" title="1. 使用Vite创建一个Vue项目"></a>1. 使用Vite创建一个Vue项目</h3><pre class="line-numbers language-none"><code class="language-none">yarn create vite
 
 ? Project name: 输入你的项目名称？（如: esvue）
 ? Select a framework: 选择安装的脚手架 (这里选vue)
@@ -438,54 +432,44 @@ Done. Now run:
 
   cd esvue
   yarn
-  yarn dev<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li>安装EsLint<pre class="line-numbers language-none"><code class="language-none">yarn add eslint -D<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-</ol>
-<p>3.初始化配置Eslint</p>
-<pre class="line-numbers language-none"><code class="language-none">npx eslint --init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+  yarn dev<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-安装EsLint"><a href="#2-安装EsLint" class="headerlink" title="2. 安装EsLint"></a>2. 安装EsLint</h3><pre class="line-numbers language-none"><code class="language-none">yarn add eslint -D<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>3.1 选择模式 (To check syntax and find problems)</p>
-<pre class="line-numbers language-none"><code class="language-none">You can also run this command directly using 'npm init @eslint/config'.
+<h3 id="3-初始化配置Eslint"><a href="#3-初始化配置Eslint" class="headerlink" title="3.初始化配置Eslint"></a>3.初始化配置Eslint</h3><pre class="line-numbers language-none"><code class="language-none">npx eslint --init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="3-1-选择模式-To-check-syntax-and-find-problems"><a href="#3-1-选择模式-To-check-syntax-and-find-problems" class="headerlink" title="3.1 选择模式 (To check syntax and find problems)"></a>3.1 选择模式 (To check syntax and find problems)</h4><pre class="line-numbers language-none"><code class="language-none">You can also run this command directly using 'npm init @eslint/config'.
 ? How would you like to use ESLint? ... 
   To check syntax only
 &gt; To check syntax and find problems
   To check syntax, find problems, and enforce code style<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>3.2 选择语言模块(选JavaScript modules)</p>
-<pre class="line-numbers language-none"><code class="language-none">? What type of modules does your project use? ...
+<h4 id="3-2-选择语言模块-选JavaScript-modules"><a href="#3-2-选择语言模块-选JavaScript-modules" class="headerlink" title="3.2 选择语言模块(选JavaScript modules)"></a>3.2 选择语言模块(选JavaScript modules)</h4><pre class="line-numbers language-none"><code class="language-none">? What type of modules does your project use? ...
 &gt; JavaScript modules (import/export)
   CommonJS (require/exports)
   None of these<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>3.3 选择语言框架(选Vue.js)</p>
-<pre class="line-numbers language-none"><code class="language-none">? Which framework does your project use? ...
+<h4 id="3-3-选择语言框架-选Vue-js"><a href="#3-3-选择语言框架-选Vue-js" class="headerlink" title="3.3 选择语言框架(选Vue.js)"></a>3.3 选择语言框架(选Vue.js)</h4><pre class="line-numbers language-none"><code class="language-none">? Which framework does your project use? ...
   React
 &gt; Vue.js
   None of these<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>3.4 是否使用ts (视自己情况而定)</p>
-<pre class="line-numbers language-none"><code class="language-none">? Does your project use TypeScript? » No / Yes<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="3-4-是否使用ts-视自己情况而定"><a href="#3-4-是否使用ts-视自己情况而定" class="headerlink" title="3.4 是否使用ts (视自己情况而定)"></a>3.4 是否使用ts (视自己情况而定)</h4><pre class="line-numbers language-none"><code class="language-none">? Does your project use TypeScript? » No / Yes<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>3.5代码在哪里运行 (用空格选中 Browser+Node)</p>
-<pre class="line-numbers language-none"><code class="language-none">? Where does your code run? ...  (Press &lt;space&gt; to select, &lt;a&gt; to toggle all, &lt;i&gt; to invert selection)
+<h4 id="3-5代码在哪里运行-用空格选中-Browser-Node"><a href="#3-5代码在哪里运行-用空格选中-Browser-Node" class="headerlink" title="3.5代码在哪里运行 (用空格选中 Browser+Node)"></a>3.5代码在哪里运行 (用空格选中 Browser+Node)</h4><pre class="line-numbers language-none"><code class="language-none">? Where does your code run? ...  (Press &lt;space&gt; to select, &lt;a&gt; to toggle all, &lt;i&gt; to invert selection)
 √ Browser
 √ Node<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>3.6 您希望您的配置文件是什么格式? (选JavaScript)</p>
-<pre class="line-numbers language-none"><code class="language-none">? What format do you want your config file to be in? ...
+<h4 id="3-6-您希望您的配置文件是什么格式-选JavaScript"><a href="#3-6-您希望您的配置文件是什么格式-选JavaScript" class="headerlink" title="3.6 您希望您的配置文件是什么格式? (选JavaScript)"></a>3.6 您希望您的配置文件是什么格式? (选JavaScript)</h4><pre class="line-numbers language-none"><code class="language-none">? What format do you want your config file to be in? ...
 &gt; JavaScript
   YAML
   JSON<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>3.7您想现在安装它们吗? (选择Yes)</p>
-<pre class="line-numbers language-none"><code class="language-none">? Would you like to install them now? » No / Yes<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="3-7您想现在安装它们吗-选择Yes"><a href="#3-7您想现在安装它们吗-选择Yes" class="headerlink" title="3.7您想现在安装它们吗? (选择Yes)"></a>3.7您想现在安装它们吗? (选择Yes)</h4><pre class="line-numbers language-none"><code class="language-none">? Would you like to install them now? » No / Yes<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>3.8 您要使用哪个软件包管理器？ (选择yarn)</p>
-<pre class="line-numbers language-none"><code class="language-none">? Which package manager do you want to use? ...
+<h4 id="3-8-您要使用哪个软件包管理器？-选择yarn"><a href="#3-8-您要使用哪个软件包管理器？-选择yarn" class="headerlink" title="3.8 您要使用哪个软件包管理器？ (选择yarn)"></a>3.8 您要使用哪个软件包管理器？ (选择yarn)</h4><pre class="line-numbers language-none"><code class="language-none">? Which package manager do you want to use? ...
   npm
 &gt; yarn
   pnpm<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>4 安装完成后 (在项目根目录会出现.eslintrc.js文件)</p>
-<pre class="line-numbers language-none"><code class="language-none">// .eslintrc.js 文件
+<h3 id="4-安装完成后-在项目根目录会出现-eslintrc-js文件"><a href="#4-安装完成后-在项目根目录会出现-eslintrc-js文件" class="headerlink" title="4 安装完成后 (在项目根目录会出现.eslintrc.js文件)"></a>4 安装完成后 (在项目根目录会出现.eslintrc.js文件)</h3><pre class="line-numbers language-none"><code class="language-none">// .eslintrc.js 文件
 // 这里就是上面3步骤初始化的文件,后面的配置都写这里
 module.exports = {
   env: {
@@ -501,20 +485,16 @@ module.exports = {
   rules: {
   }
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>5 继续安装 vite-plugin-eslint</p>
-<pre class="line-numbers language-none"><code class="language-none">// 说明: 该包是用于配置vite运行的时候自动检测eslint规范
+<h3 id="5-继续安装-vite-plugin-eslint"><a href="#5-继续安装-vite-plugin-eslint" class="headerlink" title="5 继续安装 vite-plugin-eslint"></a>5 继续安装 vite-plugin-eslint</h3><pre class="line-numbers language-none"><code class="language-none">// 说明: 该包是用于配置vite运行的时候自动检测eslint规范
 // 问题: 不装这个包可以吗? 答案是“可以的”,使用yarn dev时并不会主动检查代码
 
 yarn add -D vite-plugin-eslint<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>6 继续安装 eslint-parser</p>
-<pre class="line-numbers language-none"><code class="language-none">yarn add -D @babel/core             
+<h3 id="6-继续安装-eslint-parser"><a href="#6-继续安装-eslint-parser" class="headerlink" title="6 继续安装 eslint-parser"></a>6 继续安装 eslint-parser</h3><pre class="line-numbers language-none"><code class="language-none">yarn add -D @babel/core             
 yarn add -D @babel/eslint-parser<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>7 继续安装prettier (用于规范代码格式,不需要可以不装)</p>
-<pre class="line-numbers language-none"><code class="language-none">yarn add -D prettier
+<h3 id="7-继续安装prettier-用于规范代码格式-不需要可以不装"><a href="#7-继续安装prettier-用于规范代码格式-不需要可以不装" class="headerlink" title="7 继续安装prettier (用于规范代码格式,不需要可以不装)"></a>7 继续安装prettier (用于规范代码格式,不需要可以不装)</h3><pre class="line-numbers language-none"><code class="language-none">yarn add -D prettier
 yarn add -D eslint-config-prettier // eslint兼容的插件
 yarn add -D eslint-plugin-prettier // eslint的prettier<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>8 配置 vite.config.js</p>
-<pre class="line-numbers language-none"><code class="language-none">import { defineConfig } from 'vite'
+<h3 id="8-配置-vite-config-js"><a href="#8-配置-vite-config-js" class="headerlink" title="8 配置 vite.config.js"></a>8 配置 vite.config.js</h3><pre class="line-numbers language-none"><code class="language-none">import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import eslintPlugin from 'vite-plugin-eslint' //导入包
 
@@ -527,8 +507,7 @@ export default defineConfig({
     })
   ]
 })<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>9 配置 .prettierrc</p>
-<blockquote>
+<h3 id="9-配置-prettierrc"><a href="#9-配置-prettierrc" class="headerlink" title="9 配置 .prettierrc"></a>9 配置 .prettierrc</h3><blockquote>
 <p>如果您没有安装第7步骤的那三个包,这个配置你可以忽略跳过<br>这里主要配置代码的格式规范的,有些设置要与.eslintrc.js配置一致,防止冲突</p>
 </blockquote>
 <pre class="line-numbers language-none"><code class="language-none">// 在项目根目录创建文件 .prettierrc
@@ -555,8 +534,7 @@ export default defineConfig({
   htmlWhitespaceSensitivity: 'css'  // 根据显示样式决定html要不要折行
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>10 配置 .eslintrc.js</p>
-<pre class="line-numbers language-none"><code class="language-none">module.exports = {
+<h3 id="10-配置-eslintrc-js"><a href="#10-配置-eslintrc-js" class="headerlink" title="10 配置 .eslintrc.js"></a>10 配置 .eslintrc.js</h3><pre class="line-numbers language-none"><code class="language-none">module.exports = {
     "env": {
         "browser": true,
         "es2021": true,
@@ -663,8 +641,7 @@ export default defineConfig({
     }
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>11 配置VScode</p>
-<blockquote>
+<h3 id="11-配置VScode"><a href="#11-配置VScode" class="headerlink" title="11 配置VScode"></a>11 配置VScode</h3><blockquote>
 <p>安装“ESLint”插件【作者: Microsoft】<br>安装“Prettier ESLint”插件 【作者：Rebecca Vest】</p>
 </blockquote>
 <pre class="line-numbers language-none"><code class="language-none">// 配置vscode
@@ -769,10 +746,6 @@ export default defineConfig({
                             
                                 <a href="/tags/Prettier/">
                                     <span class="chip bg-color">Prettier</span>
-                                </a>
-                            
-                                <a href="/tags/object-Object/">
-                                    <span class="chip bg-color">[object Object]</span>
                                 </a>
                             
                         </div>
@@ -901,10 +874,6 @@ export default defineConfig({
                     
                     <a href="/tags/Prettier/">
                         <span class="chip bg-color">Prettier</span>
-                    </a>
-                    
-                    <a href="/tags/object-Object/">
-                        <span class="chip bg-color">[object Object]</span>
                     </a>
                     
                 </div>
